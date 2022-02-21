@@ -4,7 +4,7 @@ plugins {
     id "io.spring.dependency-management" version '1.0.10.RELEASE'
 }
 
-group 'org.example'
+group 'com.ms.wm.cloudation.bytethecloud'
 version '1.0-SNAPSHOT'
 
 apply plugin: "io.spring.dependency-management"
