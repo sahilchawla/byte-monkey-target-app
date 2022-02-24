@@ -1,17 +1,15 @@
 package com.ms.wm.cloudathon.repository;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public class FinderImpl {
+import java.io.IOException;
+
+
+public class  FinderImpl {
 
     public static final String SELECT_ID_EMP_FNAME_EMP_LNAME_FROM_BYTE_THE_CLOUD_T_1 = "SELECT id,emp_fname,emp_lname from byte_the_cloud_t1";
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
 
-    public void test(){
+    public void test(JdbcTemplate jdbcTemplate ) throws IOException {
        jdbcTemplate.query(SELECT_ID_EMP_FNAME_EMP_LNAME_FROM_BYTE_THE_CLOUD_T_1, (rs,rowNum)-> {
            System.out.println("Record - "+rowNum);
            System.out.println("ID - "+rs.getInt(1));
