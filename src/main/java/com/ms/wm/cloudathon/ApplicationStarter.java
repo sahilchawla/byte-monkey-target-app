@@ -1,6 +1,5 @@
 package com.ms.wm.cloudathon;
 
-import com.ms.wm.cloudathon.config.ParentConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
