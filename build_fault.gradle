@@ -35,9 +35,9 @@ bootJar{
 }
 
 azurewebapp {
-    subscription ='b54acde2-eb6d-488b-8439-066dbd54def8'
-    resourceGroup = 'bytemnky-rg'
-    appName = 'bytethecloud-spring-boot-fault-mode'
+    subscription ='9f43e307-e3ca-4bea-aacd-32954456941c'
+    resourceGroup = 'bytemonkey-rg'
+    appName = 'bytethecloud-fault'
     pricingTier = 'P1v2'
     region = 'westus'
     runtime {

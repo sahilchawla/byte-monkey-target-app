@@ -35,9 +35,9 @@ bootJar{
 }
 
 azurewebapp {
-    subscription ='b54acde2-eb6d-488b-8439-066dbd54def8'
-    resourceGroup = 'bytemnky-rg'
-    appName = 'bytethecloud-spring-boot-nullify-mode'
+    subscription ='9f43e307-e3ca-4bea-aacd-32954456941c'
+    resourceGroup = 'bytemonkey-rg'
+    appName = 'bytethecloud-nullify'
     pricingTier = 'P1v2'
     region = 'westus'
     runtime {
@@ -47,7 +47,7 @@ azurewebapp {
     }
 
     appSettings {
-      JAVA_OPTS="-javaagent:/home/JavaAgent/byte-monkey.jar=mode:nullify,filter:com/ms/wm/"
+      JAVA_OPTS="-javaagent:/home/JavaAgent/byte-monkey.jar=mode:nullify,filter:com/ms/wm/cloudathon/repository"
     }
     auth = {
         type='auto'
